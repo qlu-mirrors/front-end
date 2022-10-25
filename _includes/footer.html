@@ -1,0 +1,67 @@
+{% for footer-i in (1..2) %}
+{% unless page.legacy and footer-i == 1 %}
+<div id="footerwrap" class="tuna-foot-{{ footer-i }}"{% if page.legacy %} style="visibility: visible;"{% endif %}>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4{% if page.legacy %} col-xs-4{% endif %}">
+        <p class="thuhidden">本站{% if site.operator %}由{{ site.operator }}支持创办，{% endif %}由网络运维部进行维护</p>
+        <p class="thuhidden">齐鲁工业大学网络信息中心网络运维部，负责办公区与教学区的网络设施维护、以及学校教育网的建设与保障工作。</p>
+        <p>本站相关源码可在 <a href="https://github.com/qlu-mirrors/back-end"><em>这里(镜像站后端)</em></a> 和 <a href="https://github.com/qlu-mirrors/front-end"><em>这里(镜像站前端)</em></a> 获取。</p>
+        <p class="thuhidden">本站暂时仅限校内用户使用</p>
+        {% if site.footnote %}
+        <p class="thuhidden">{{ site.footnote }}</p>
+        {% endif %}
+      </div>
+      <div class="col-lg-4 col-md-4{% if page.legacy %} col-xs-4{% endif %}">
+        <h4>Contact Us</h4>
+        <div class="thuhidden">
+          <ul class="social">
+            
+            <li>
+            <a href="https://github.com/qlu/">{% fa_svg fab.fa-github %} GitHub </a>
+            </li>
+            
+          </ul>
+        </div>
+        {% if site.sponsor %}
+        <h4>Sponsor</h4>
+        <div class="img-responsive thuhidden">
+        {% for sponsor in site.sponsor %}
+        <img src="/static/img/{{ site.sponsors[sponsor].logo }}.png" srcset="/static/img/{{ site.sponsors[sponsor].logo }}.png 1x, /static/img/{{ site.sponsors[sponsor].logo }}@2x.png 2x, /static/img/{{ site.sponsors[sponsor].logo }}@3x.png 3x, /static/img/{{ site.sponsors[sponsor].logo }}@4x.png 4x" alt="{{ site.sponsors[sponsor].short }}" />
+        {% endfor %}
+        </div>
+        {% assign first_sponsor = site.sponsors[site.sponsor.first] %}
+        <p class="thuhidden">本存储服务器由<a href="{{ first_sponsor.link }}">{{ first_sponsor.name }}</a>（{{ first_sponsor.eng }}）赞助{% if site.poweredby %}，并由{{ site.poweredbys[site.poweredby] }}强力驱动{% endif %}。TUNA 感谢<!--
+        {% for sponsor in site.sponsor %}
+        -->{{ site.sponsors[sponsor].short }}<!--
+          {% if forloop.rindex0 == 1 %}
+          -->和<!--
+          {% elsif forloop.rindex0 > 1 %}
+          -->、<!--
+          {% endif %}
+        {% endfor %}
+        -->对开源软件和社区的贡献。</p>
+        {% endif %}
+      </div>
+      <div class="col-lg-4 col-md-4{% if page.legacy %} col-xs-4{% endif %}">
+        <img class="img-responsive thuhidden center-block" style="margin-top:5%" src="/static/img/logo-white.png" srcset="/static/img/logo-white.png 1x, /static/img/logo-white@2x.png 2x, /static/img/logo-white@3x.png 3x, /static/img/logo-white@4x.png 4x" />
+      </div>
+    </div><!--/row -->
+  </div><!--/container -->
+</div><!--/footerwrap -->
+{% endunless %}
+{% endfor %}
+
+<script>
+WebFont.load({
+  custom: {
+    families: ['Lato']
+  }
+});
+var lei3Po8h = ["support", ["tuna", "tsinghua", "edu", "cn"].join(".")].join("@");
+$('a.eib1gieB')
+  .text(lei3Po8h)
+  .attr('href', ["ma","lto:"].join("i") + lei3Po8h);
+</script>
+
+{% fa_svg_generate %}
