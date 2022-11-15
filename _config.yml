@@ -21,8 +21,8 @@ meow_404: true
 issue_tag: tuna
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: "/:categories/:title/"
-url: "https://mirrors.qlunet.cn"
-hostname: "mirrors.qlunet.cn"
+url: "https://mirrors.qlu.edu.cn"
+hostname: "mirrors.qlu.edu.cn"
 urlv4: "https://mirrors4.qlu.edu.cn"
 urlv6: "https://mirrors6.qlu.edu.cn"
 

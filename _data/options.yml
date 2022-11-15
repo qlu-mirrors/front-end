@@ -444,6 +444,24 @@ mirror_desc:
     desc: 一个免费开源的网络数据包分析软件
   - name: zabbix
     desc: 著名的网络监视、管理系统
+  - name: bioconda
+    desc: 一个自动化管理生物学软件的工具，是Conda的一个子频道
+  - name: standard-RAxML
+    desc: 一款能使用多线程或并行化使用最大似然法构建进化树的生物学软件
+  - name: CodonW
+    desc: 一款分析密码子使用偏好性的生物学软件
+  - name: KaKs_Calculator
+    desc: 一个生物信息学工具包，能够计算编码和非编码序列的选择压力
+  - name: Figtree
+    desc: 一款生成、查看可视化系统发育树的生物学工具
+  - name: BioEdit
+    desc: 一个基因序列编辑与分析的生物学软件
+  - name: MEGA
+    desc: 一款用于分子进化遗传分析的生物学软件
+  - name: PAML
+    desc: 一款利用最大似然法对DNA或蛋白质序列进行系统发育分析的生物学软件包
+  - name: rosetta
+    desc: 一个蛋白质结构建模和分析工具包
 
 new_mirrors:
   - wireshark
