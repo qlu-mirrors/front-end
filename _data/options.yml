@@ -462,6 +462,10 @@ mirror_desc:
     desc: 一款利用最大似然法对DNA或蛋白质序列进行系统发育分析的生物学软件包
   - name: rosetta
     desc: 一个蛋白质结构建模和分析工具包
+  - name: pytorch-pip
+    desc: 一个开源的Python机器学习库
+  - name: pytorch-conda
+    desc: 一个开源的Python机器学习库
 
 new_mirrors:
   - wireshark
@@ -532,7 +536,6 @@ unlisted_mirrors:
     url: '/github-release/tuna/thuthesis'
 
 force_redirect_help_mirrors:
-  - AOSP
   - lineageOS
   - homebrew
   - linux.git

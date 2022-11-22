@@ -2,7 +2,15 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8K3LJ62ZVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-8K3LJ62ZVF');
+</script>
 {% capture page_desc %}{% if include.metaDesc %}{{ include.metaDesc }} | {% if include.cattitle %}{{ include.cattitle }} | {% endif %}{% endif %}{{ site.title }}，{{ site.desc }}{% endcapture %}
 {% capture page_title %}{% if page.mirrorid %} {{ page.mirrorid }} |{% elsif page.title %} {{ page.title }} |{% endif %}{% if include.cattitle %} {{ include.cattitle }} |{% endif %}{% if (page.title or include.cattitle) %}{{" "}}{% endif %}{{ site.title }}{% if site.brand %} | {{ site.brand }}{% endif %}{% endcapture %}
 

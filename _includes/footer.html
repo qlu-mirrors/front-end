@@ -7,7 +7,6 @@
         <p class="thuhidden">本站{% if site.operator %}由{{ site.operator }}支持创办，{% endif %}由网络运维部进行维护。</p>
         <p class="thuhidden">齐鲁工业大学网络信息中心网络运维部，负责办公区与教学区的网络设施维护、以及学校教育网的建设保障工作。</p>
         <p>本站相关源码可在 <a href="https://github.com/qlu-mirrors"><em>这里</em></a>获取。</p>
-        <p class="thuhidden">本站暂时仅限齐鲁工业大学内网用户使用</p>
         {% if site.footnote %}
         <p class="thuhidden">{{ site.footnote }}</p>
         {% endif %}
@@ -48,6 +47,15 @@
 <!--/footerwrap -->
 {% endunless %}
 {% endfor %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8K3LJ62ZVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8K3LJ62ZVF');
+</script>
 
 <script>
   WebFont.load({
